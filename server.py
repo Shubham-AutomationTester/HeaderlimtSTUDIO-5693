@@ -56,8 +56,8 @@ class TestHandler(BaseHTTPRequestHandler):
             <a href="/?size=8200">8200</a><br>
             <a href="/?size=10000">10000</a><br>
             <a href="/?size=70000">70000</a><br>
-            <a href="/?size=65536">65536</a><br>
-            <a href="/?size=65537">65537</a><br>
+            <a href="/?size=65500">65536</a><br>
+            <a href="/?size=65502">65537</a><br>
             <a href="/?size=13267">13267</a>
         </body>
         </html>
