@@ -3,7 +3,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 from urllib.parse import urlparse, parse_qs
 
 HOST = "0.0.0.0"
-PORT = int(os.environ.get("PORT", 10000))
+PORT = int(os.environ.get("PORT", 100000))
 DEFAULT_HEADER_SIZE = 13267
 
 
@@ -18,7 +18,7 @@ class TestHandler(BaseHTTPRequestHandler):
         except ValueError:
             size = DEFAULT_HEADER_SIZE
 
-        return max(1, min(size, 100000))
+        return max(1, min(size, 1000000))
 
     def send_test_headers(self, header_size):
         self.send_response(200)
@@ -55,6 +55,9 @@ class TestHandler(BaseHTTPRequestHandler):
             <a href="/?size=8190">8190</a><br>
             <a href="/?size=8200">8200</a><br>
             <a href="/?size=10000">10000</a><br>
+            <a href="/?size=70000">8200</a><br>
+            <a href="/?size=65536">10000</a><br>
+            <a href="/?size=65537">10000</a><br>
             <a href="/?size=13267">13267</a>
         </body>
         </html>
