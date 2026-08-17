@@ -13,7 +13,7 @@ PORT = int(os.environ.get("PORT", 10000))
 DEFAULT_HEADER_SIZE = 13267
 DEFAULT_MANAGER_LIMIT = 65536
 
-AUTHOR_NAME = "Your Name"
+AUTHOR_NAME = "Shubham Sharma"
 
 
 # ---------------------------------------------------------
