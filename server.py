@@ -46,7 +46,7 @@ class TestHandler(BaseHTTPRequestHandler):
         <head>
             <title>SearchStax Header Test</title>
          <footer>
-        <p><strong>Author:</strong> Shubham Sharma</p>
+        <p><strong>Author:</strong> Shubham Sharma </p>
     </footer>
         </head>
         <body>
