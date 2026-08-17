@@ -1,9 +1,3 @@
-<html> 
-<h1>SearchStax Crawler Header Test</h1>
-<p><strong>Author:</strong> Shubham Sharma</p>
-<p>Header size: {header_size} bytes</p>
-</html>
-
 import os
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from urllib.parse import urlparse, parse_qs
@@ -51,6 +45,9 @@ class TestHandler(BaseHTTPRequestHandler):
         <html>
         <head>
             <title>SearchStax Header Test</title>
+         <footer>
+        <p><strong>Author:</strong> Shubham Sharma</p>
+    </footer>
         </head>
         <body>
             <h1>SearchStax Crawler Header Test</h1>
